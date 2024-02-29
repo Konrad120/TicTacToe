@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Orbitron&family=Silkscreen:wght@700&display=swap');
+
+:root {
+    --white: #f4f5f7;
+    --red: #827568;
+    --orange: #EAC9AE;
+    --yellow: #EFECE6;
+    --blue: #A2B9AF;
+
+    --cell-size: 100px;
+    --color: #81c3fd;
+    /* for hover */
+    --color-set: #0275d8;
+    /* when set */
+    --l: 10px;
+    /* X line-width */
+}
+
+* {
+    margin: 0 0;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--yellow);
+}
+
+#banner {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--red);
+}
+
+#imgHeader1 {
+    width: 150px;
+    height: 150px;
+}
+
+#imgHeader2 {
+    width: 150px;
+    height: 150px;
+}
+
+#header {
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+    font-family: 'Silkscreen', Arial, Arial, Helvetica, sans-serif;
+    color: orangered;
+}
+
+/*! NAV BAR */
+#navbar {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+li {
+    width: 20%;
+    font-weight: 900;
+    border: 1px solid var(--white);
+    text-align: center;
+    background-color: var(--orange);
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 70vh 10vh 10vh;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+#columnRight {
+    background-color: beige;
+    grid-column: 2/4;
+    grid-row: 1/4;
+}
+
+#columnLeft {
+    background-color: rgb(148, 148, 122);
+    grid-row: 1/2;
+    grid-row: 1/4;
+    font-size: 23px;
+    overflow-y: scroll;
+
+}
+
+#tictactoePara {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+/*! CSS for tic tac toe  */
+
+
+#gameHeading {
+    color: orangered;
+    margin-bottom: -5px;
+    padding-top: 30px;
+}
+
+#columnRight p {
+    margin-bottom: -10px;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    border: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell:active {
+    outline: none;
+}
+
+/* 3*3 Grid */
+#b1 {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#b2 {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b3 {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b4 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#b5 {
+    border: 1px solid gray;
+}
+
+#b6 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b7 {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#b8 {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b9 {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+/* Reset Button */
+#but {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: auto;
+    border-radius: 8px;
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Player turn space */
+#print {
+    font-family: Verdana,
+        Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+/* Main Container */
+#main {
+    text-align: center;
+}
+
+/* Game Instruction Text */
+#ins {
+    font-family: Verdana, Geneva,
+        Tahoma, sans-serif;
+    color: black;
+}
